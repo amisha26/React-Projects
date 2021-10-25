@@ -9,7 +9,7 @@ const Login = () => {
   return (
     <div className="login">
       <form className="login_form">
-        <h1>Login Here</h1>
+        <h1>Login Here 🔐</h1>
         <input
           type="name"
           placeholder="Name.."
@@ -18,16 +18,17 @@ const Login = () => {
         />
         <input
           type="email"
-          placeholder="Email"
+          placeholder="Email.."
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
         <input
           type="password"
-          placeholder="Password"
+          placeholder="Password.."
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
+        <button type="submit" className="submit_btn">Submit</button>
       </form>
     </div>
   );
