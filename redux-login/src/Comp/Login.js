@@ -13,7 +13,7 @@ const Login = () => {
     e.preventDefault();
 
     dispatch(
-      login({
+      Login({
         name: name,
         email: email,
         password,
