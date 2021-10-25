@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Login.css";
 import { useDispatch } from "react-redux";
+import {login} from '../features/userSlice';
 
 const Login = () => {
   const [name, setName] = useState("");
@@ -13,7 +14,7 @@ const Login = () => {
     e.preventDefault();
 
     dispatch(
-      Login({
+      login({
         name: name,
         email: email,
         password,
