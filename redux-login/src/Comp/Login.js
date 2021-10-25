@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import './Login.css'
 
 const Login = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [passowrd, setPassword] = useState("");
+  const [password, setPassword] = useState("");
 
   return (
     <div className="login">
